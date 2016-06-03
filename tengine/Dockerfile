@@ -19,5 +19,5 @@ RUN cd /usr/tengine && ./configure --prefix=/usr/local/nginx --with-ld-opt="-los
 --add-module=/tmp/tengine/modules/nginx-upstream-idempotent \
 --add-module=/tmp/tengine/modules/headers-more-nginx-module \
 --add-module=/tmp/tengine/modules/nginx-x-rid-header && make && make install
-WORKDIR /app
 EXPOSE 80
+CMD ["/bin/bash"]
